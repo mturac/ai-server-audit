@@ -1,0 +1,30 @@
+{
+  "server": {
+    "host": "YOUR_SERVER_IP",
+    "timeout_ms": 1500,
+    "scan_threads": 50
+  },
+  "ports": {
+    "scan": [21, 22, 23, 25, 53, 80, 110, 143, 443, 3000, 3306, 5432, 6379, 8080, 8443, 9200, 27017],
+    "forbidden": [23, 21, 110, 143]
+  },
+  "checks": {
+    "health_check": true,
+    "port_scan": true,
+    "security": true,
+    "updates": true
+  },
+  "ai": {
+    "anthropic": true,
+    "openai": true,
+    "anthropic_api_key": "",
+    "openai_api_key": ""
+  },
+  "output": {
+    "format": "pretty",
+    "report_file": ""
+  },
+  "notify": {
+    "webhook_url": ""
+  }
+}
